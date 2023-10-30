@@ -34,4 +34,20 @@ echo "Current user's default shell - $SHELL"
 echo "Random integer between 0 and 32767 - $RANDOM"
 echo "--------------------Task-6--------------------------------------"
 # Task 6: Wildcard
-ls *.txt
+ls *.sh
+ls file?.txt
+
+# * (Asterisk): Matches zero or more characters. For example, *.txt  matches all files with the ".txt" extension, and file* matches all filenames starting with "file."
+
+# ? (Question Mark): Matches any single character. For example, file?.txt matches files like "file1.txt," "fileA.txt," but not "file12.txt."
+
+# [...] (Square Brackets): Matches any single character specified within the brackets. For example, [aeiou] matches any vowel, and [0-9] matches any single digit.
+
+# [!...] or [^...] (Negation): Matches any single character that is not specified within the brackets. For example, [^0-9] matches any character that is not a digit.
+
+# {...} (Brace Expansion): Generates multiple strings based on a comma-separated list enclosed within curly braces. For example, {apple,banana,orange} would generate "apple," "banana," and "orange."
+
+# ** (Double Asterisks): Matches directories and their subdirectories recursively. It's often used with tools like find to search for files in a directory tree.
+
+
+
